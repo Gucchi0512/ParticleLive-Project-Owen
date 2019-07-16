@@ -5791,6 +5791,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoveLabyrince
       objectReference: {fileID: 0}
+    - target: {fileID: 4114896427713188581, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4114896427713188578, guid: a51d13c7fb7da1c48b021ae43e8237ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5846,6 +5851,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4114896426401217745, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbbb048d62a2b2240abe3b7874235d9d, type: 2}
+    - target: {fileID: 4114896426401217745, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbbb048d62a2b2240abe3b7874235d9d, type: 2}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.7843857
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.64705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.64705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.6823804
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218951, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbbb048d62a2b2240abe3b7874235d9d, type: 2}
+    - target: {fileID: 4114896426550218951, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbbb048d62a2b2240abe3b7874235d9d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51d13c7fb7da1c48b021ae43e8237ca, type: 3}
 --- !u!1001 &5383301663117082778
@@ -5859,6 +5914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StartBowBreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 5383301663460786297, guid: 45f94c926332d5e49b3a9b6edb606c85,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5383301663460786302, guid: 45f94c926332d5e49b3a9b6edb606c85,
         type: 3}
@@ -5929,6 +5989,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeX
       objectReference: {fileID: 0}
+    - target: {fileID: 6835497992628962510, guid: b781f5eb64d0cc4489fdfa00b50a4025,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6835497992628962509, guid: b781f5eb64d0cc4489fdfa00b50a4025,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5997,6 +6062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kagome-KagomeY
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131819057097902365, guid: 41850eee3a2ba9347945d7c1def0f80f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7131819057097902362, guid: 41850eee3a2ba9347945d7c1def0f80f,
         type: 3}
@@ -6140,6 +6210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kagome-KagomeZ
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949441838982422749, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8949441838982422748, guid: 0164680d06469744b8062071a3084196,
         type: 3}
