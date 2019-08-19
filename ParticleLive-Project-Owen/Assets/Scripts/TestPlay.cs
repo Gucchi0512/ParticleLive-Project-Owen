@@ -5,12 +5,12 @@ using UnityEngine;
 public class TestPlay : MonoBehaviour
 {
     public GameObject[] eff;
-    
+    private int count=0;
     public AudioSource music;
 
     // Start is called before the first frame update
     void Start(){
-        music.Play();
+        //music.Play();
         foreach (var item in eff) {
             item.SetActive(false);
         }
@@ -20,16 +20,14 @@ public class TestPlay : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A)) {
-            for(int i = 0; i < 3; i++) {
-                eff[i].SetActive(true);
+            eff[count].SetActive(true);
+            if (count < eff.Length) {
+                count++;
+            } else {
+                count = 0;
             }
         }
-        if (Input.GetKeyDown(KeyCode.S)) {
-            eff[3].SetActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.D)){
-            eff[4].SetActive(true);
-        }
+        
         if (Input.GetKeyDown(KeyCode.Space)){
             foreach(var item in eff) {
                 if (item.activeSelf) {
