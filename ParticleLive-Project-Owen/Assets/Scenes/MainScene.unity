@@ -199,6 +199,11 @@ PrefabInstance:
       propertyPath: ShapeModule.m_Scale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4114896426401217742, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
         type: 3}
       propertyPath: ShapeModule.radius.value
@@ -218,6 +223,31 @@ PrefabInstance:
         type: 3}
       propertyPath: ShapeModule.m_Scale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].cycleCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114896426550218948, guid: a51d13c7fb7da1c48b021ae43e8237ca,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51d13c7fb7da1c48b021ae43e8237ca, type: 3}
@@ -363,6 +393,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeZ
       objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -421,10 +456,16 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
+--- !u!95 &252404965 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5383301662729639818, guid: 45f94c926332d5e49b3a9b6edb606c85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1591179747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &281961872
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +501,7 @@ RectTransform:
   - {fileID: 1669777012}
   - {fileID: 107139966}
   - {fileID: 1814862493}
+  - {fileID: 305660412}
   m_Father: {fileID: 1273772275}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -528,6 +570,85 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &305660411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305660412}
+  - component: {fileID: 305660414}
+  - component: {fileID: 305660413}
+  m_Layer: 5
+  m_Name: Fin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &305660412
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305660411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 281961873}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &305660413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305660411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9570d507878c26c4180bd07c4d9f0c84, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Fin
+--- !u!222 &305660414
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305660411}
+  m_CullTransparentMesh: 0
 --- !u!1001 &348437725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -539,6 +660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kagome-KagomeZ (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
@@ -598,7 +724,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -613,6 +739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kagome-KagomeZ (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
@@ -672,7 +803,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -687,6 +818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kagome-KagomeZ (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
@@ -746,7 +882,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -846,8 +982,16 @@ PlayableDirector:
     value: {fileID: 1224778293}
   - key: {fileID: 114255024355511536, guid: a8a682def4c3eaf4da6da9b31ad157c9, type: 2}
     value: {fileID: 899371396}
-  - key: {fileID: 114661101498412302, guid: a8a682def4c3eaf4da6da9b31ad157c9, type: 2}
-    value: {fileID: 0}
+  - key: {fileID: 114913827505670124, guid: a8a682def4c3eaf4da6da9b31ad157c9, type: 2}
+    value: {fileID: 252404965}
+  - key: {fileID: 114514583046529210, guid: a8a682def4c3eaf4da6da9b31ad157c9, type: 2}
+    value: {fileID: 1694554421}
+  - key: {fileID: 114684573451057574, guid: a8a682def4c3eaf4da6da9b31ad157c9, type: 2}
+    value: {fileID: 1170893279}
+  - key: {fileID: 114403657627812104, guid: a8a682def4c3eaf4da6da9b31ad157c9, type: 2}
+    value: {fileID: 2066875606}
+  - key: {fileID: 114331051822222626, guid: a8a682def4c3eaf4da6da9b31ad157c9, type: 2}
+    value: {fileID: 1775056386}
   m_ExposedReferences:
     m_References:
     - e477940c9dfe31d4d984548443e2ed0a: {fileID: 1576548198}
@@ -879,7 +1023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688901528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 411.13965, y: 235.41737, z: 108.878296}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10325,6 +10469,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeZ (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10383,7 +10532,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -15151,6 +15300,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeZ (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15209,7 +15363,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -15454,6 +15608,85 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 439470677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &968120332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 968120333}
+  - component: {fileID: 968120335}
+  - component: {fileID: 968120334}
+  m_Layer: 5
+  m_Name: Fin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &968120333
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968120332}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000018626451, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00006342573}
+  m_LocalScale: {x: 0.9997175, y: 0.9997175, z: 0.99971783}
+  m_Children: []
+  m_Father: {fileID: 1672171151}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -7.72574, y: 0.00006300211}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &968120334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968120332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9570d507878c26c4180bd07c4d9f0c84, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Fin
+--- !u!222 &968120335
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968120332}
+  m_CullTransparentMesh: 0
 --- !u!1 &981599886
 GameObject:
   m_ObjectHideFlags: 0
@@ -16885,6 +17118,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeZ (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16943,7 +17181,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -16970,6 +17208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kagome-KagomeZ (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
@@ -17029,10 +17272,16 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
+--- !u!95 &1170893279 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5383301662582661890, guid: 45f94c926332d5e49b3a9b6edb606c85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1591179747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1175373786 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
@@ -17168,6 +17417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeZ (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17226,7 +17480,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -22303,6 +22557,11 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 6465
       objectReference: {fileID: 0}
+    - target: {fileID: 5383301662348874716, guid: 45f94c926332d5e49b3a9b6edb606c85,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5383301662582661888, guid: 45f94c926332d5e49b3a9b6edb606c85,
         type: 3}
       propertyPath: autoRandomSeed
@@ -22312,6 +22571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: randomSeed
       value: 6466
+      objectReference: {fileID: 0}
+    - target: {fileID: 5383301662582661888, guid: 45f94c926332d5e49b3a9b6edb606c85,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5383301662729639816, guid: 45f94c926332d5e49b3a9b6edb606c85,
         type: 3}
@@ -22323,6 +22587,11 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 6464
       objectReference: {fileID: 0}
+    - target: {fileID: 5383301662729639816, guid: 45f94c926332d5e49b3a9b6edb606c85,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5383301663100816122, guid: 45f94c926332d5e49b3a9b6edb606c85,
         type: 3}
       propertyPath: autoRandomSeed
@@ -22333,6 +22602,11 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 6467
       objectReference: {fileID: 0}
+    - target: {fileID: 5383301663100816122, guid: 45f94c926332d5e49b3a9b6edb606c85,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5383301663496927562, guid: 45f94c926332d5e49b3a9b6edb606c85,
         type: 3}
       propertyPath: autoRandomSeed
@@ -22342,6 +22616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: randomSeed
       value: 6468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5383301663496927562, guid: 45f94c926332d5e49b3a9b6edb606c85,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45f94c926332d5e49b3a9b6edb606c85, type: 3}
@@ -22590,6 +22869,7 @@ RectTransform:
   - {fileID: 1638900765}
   - {fileID: 981599887}
   - {fileID: 1994424353}
+  - {fileID: 968120333}
   m_Father: {fileID: 1273772275}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22658,6 +22938,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!95 &1694554421 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5383301662348874718, guid: 45f94c926332d5e49b3a9b6edb606c85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1591179747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1723890475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
@@ -22709,7 +22995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1772454762
 Transform:
   m_ObjectHideFlags: 0
@@ -22747,6 +23033,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kagome-KagomeZ (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
@@ -22806,10 +23097,16 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
+--- !u!95 &1775056386 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5383301663496927572, guid: 45f94c926332d5e49b3a9b6edb606c85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1591179747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1814862492
 GameObject:
   m_ObjectHideFlags: 0
@@ -22922,6 +23219,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeZ (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22980,7 +23282,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -23013,7 +23315,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 35f78969c6ece7c409803e2a209c89d2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.059
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -23123,6 +23425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kagome-KagomeZ (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8985769563796812923, guid: 0164680d06469744b8062071a3084196,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985769563796812924, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23181,7 +23488,7 @@ PrefabInstance:
     - target: {fileID: 8985769563796812925, guid: 0164680d06469744b8062071a3084196,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0164680d06469744b8062071a3084196, type: 3}
@@ -23428,6 +23735,12 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!95 &2066875606 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5383301663100816068, guid: 45f94c926332d5e49b3a9b6edb606c85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1591179747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2109528165
 GameObject:
   m_ObjectHideFlags: 0
